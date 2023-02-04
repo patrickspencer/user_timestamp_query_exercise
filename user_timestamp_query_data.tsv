@@ -1,0 +1,7 @@
+user	timestamp	query
+u1	123	q_u1_a
+u2	1000	q_u2_a
+u2	1001	q_u2_b
+u1	124	q_u1_b
+u1	400	q_u1_c
+u3	2000	q_u3_a

@@ -9,7 +9,8 @@ def read_file(file_name):
     columns: user, timestamp, text
     """
     try:
-        df = pd.read_csv(file_name, sep='\t')
+        df = pd.read_csv(file_name, sep='\t',
+                         dtype={'user': str, 'timestamp': int, 'query': str})
         return [(r[0], r[1], r[2]) for _, r in df.iterrows()]
     except FileNotFoundError:
         print(f"File {file_name} not found.")
